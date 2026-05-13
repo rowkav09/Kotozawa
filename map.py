@@ -39,7 +39,7 @@ grid = [
 ]
 
 #tiles
-tile_sheet = pygame.image.load('grassy_tileset_sheet.png')
+tile_sheet = pygame.image.load('img/grassy_tileset_sheet.png')
 
 grass1_tile = tile_sheet.subsurface((0, 50, tile_zoom, tile_zoom))
 grass1_tile = pygame.transform.scale(grass1_tile, (tile_width,tile_width))
@@ -49,8 +49,8 @@ path_tile = tile_sheet.subsurface((0, 100, 2*tile_zoom, 2*tile_zoom))
 path_tile = pygame.transform.scale(path_tile, (tile_width, tile_width))
 
 #objects
-house_front = load('japanese_house_front.png',(80,90))
-shop_front = load('japanese_shop_front.png',(80,90))
+house_front = load('img/japanese_house_front.png',(80,90))
+shop_front = load('img/japanese_shop_front.png',(80,90))
 
 #random list to determine type of grass
 randomlist = [[random.randint(0, 3) for _ in range(50)] for _ in range(28)]
